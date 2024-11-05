@@ -1,15 +1,52 @@
 <html>
-<head>
+  <head>
     <!-- Include Heap -->
     <script type="text/javascript">
-        window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
-        heap.load("1028628221");
+      ;(window.heap = window.heap || []),
+        (heap.load = function (e, t) {
+          ;(window.heap.appid = e), (window.heap.config = t = t || {})
+          var r = document.createElement("script")
+          ;(r.type = "text/javascript"),
+            (r.async = !0),
+            (r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js")
+          var a = document.getElementsByTagName("script")[0]
+          a.parentNode.insertBefore(r, a)
+          for (
+            var n = function (e) {
+                return function () {
+                  heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                }
+              },
+              p = [
+                "addEventProperties",
+                "addUserProperties",
+                "clearEventProperties",
+                "identify",
+                "resetIdentity",
+                "removeEventProperty",
+                "setEventProperties",
+                "track",
+                "unsetEventProperty",
+              ],
+              o = 0;
+            o < p.length;
+            o++
+          )
+            heap[p[o]] = n(p[o])
+        })
+      heap.load("1028628221")
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Page with iframe</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
     <iframe src="https://jaredramsey.com/jessi.html" title="description"></iframe>
     <p><button>Test button</button></p>
-</body>
+  </body>
 </html>
